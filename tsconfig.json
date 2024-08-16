@@ -3,7 +3,6 @@
     "module": "commonjs",
     "target": "ES2022",
     "lib": ["ES2022"],
-    "noImplicitAny": false,
     "noImplicitThis": true,
     "moduleResolution": "node",
     "outDir": "dist",
@@ -17,6 +16,9 @@
     "sourceMap": true,
     "inlineSources": true,
     "composite": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": false,
     "paths": {
       "@subql/utils": ["packages/utils/src"],
       "@subql/utils/*": ["packages/utils/src/*"],
@@ -32,8 +34,7 @@
       "@subql/types/*": ["packages/types/src/*"],
       "@subql/testing": ["packages/testing/src"],
       "@subql/testing/*": ["packages/testing/src/*"]
-    },
-    "skipLibCheck": true
+    }
   },
   "references": [
     {"path": "packages/cli"},
